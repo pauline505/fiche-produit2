@@ -1,0 +1,123 @@
+body{
+	background-image: url(orange.jpg);
+	background-position: bottom;
+	padding:0;
+	font-family: 'Rubik', sans-serif;
+}
+.container {
+	display: flex;
+	justify-content: center;
+}
+.card {
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	width:1000px;
+}
+i.fas.fa-heart{
+	font-size:200%;
+/*	position: relative;
+    top: 20px;
+    left: 45px;*/
+    color:#d86806;
+    padding:20px;
+}
+i.fas.fa-star {
+	font-size:150%;
+	padding:5px;
+}
+i.far.fa-star {
+	font-size: 150%;
+	padding:5px;
+}
+
+.left{
+	display: flex;
+	width: 100%;
+}
+.right{
+	padding-left:20px;
+	margin:auto;
+
+}
+.ligne{
+	display:flex;
+	padding:20px;
+}
+.bouton{
+	background-color: #d86806;
+	padding:40px;
+	border-radius:5px;
+}
+.bouton a{
+	color:white;
+	text-decoration:none;
+	font-size: 50px;
+	display: flex;
+    justify-content: center;
+}
+.large {
+	width: 960px;
+}
+.little{
+	padding:10px;
+	width:300px;
+}
+
+@media screen and (max-width: 1050px) {
+	body{
+		background-position: left;
+	}
+	.card {
+		width:600px;
+	}
+	.photoarticle{
+		width:100%;
+	}
+	.large {
+	    width:560px;
+	}
+	.little{
+		width:170px;
+	}
+	.right{
+		width:50%;
+	}
+	.left{
+		width:50%;
+		display:flex;
+	}
+}
+@media screen and (max-width: 650px) {
+
+	.card {
+		width:80%;
+	}
+	.ligne{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.photoarticle{
+		width:300px;
+		padding-bottom:20px;
+	}
+	.large {
+	    width:300px;
+	}
+	.little{
+		width:300px;
+	}
+	.right{
+		width:50%;
+	}
+	.left{
+		width:50%;
+		display:flex;
+		height: 200px;
+	}
+	.etoiles {
+    	padding-top: 20px;
+    }
+}
